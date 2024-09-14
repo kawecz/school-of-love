@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+
+:root {
+    --color1:#FCFAF4;
+    --color2:#F15D21;
+    --color3:#F3885D;
+    --color4:#2D2C2C;
+    --color5:#888784;
+    --color6:#DFD7C4;
+    --color7:#EEE9DD;
+    --color8:#918066;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+body, html {
+    background-color: rgb(122, 122, 122);
+}
+
+header {
+    background-color: var(--color1);
+  
+    height: 12vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em;
+    text-transform: uppercase;
+}
+
+nav > h2 {
+    font-family: "Domine", serif;
+    color: var(--color4);
+    font-size: 25pt;
+   
+}
+
+.burger {
+    display: none;
+    background:none;
+    border: none;
+    border-top: 3px solid var(--color4);
+    cursor: pointer;
+}
+
+
+.burger::before,
+.burger::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: var(--color4);
+    margin-top: 0.5em;
+    transition: 0.3s;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    list-style: none;
+}
+
+nav > ul > li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: var(--color4);
+}
+
+nav > ul > li > a:hover {
+    color: var(--color3);
+    transition: all 0.5s;
+}
+
+#home {
+    color: var(--color3);
+}
+
+.hero {
+    background: url(imgs/couple-4.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Domine", serif;
+}
+
+.hero > h1 {
+    margin-top: 1em;
+    max-width: 650px;
+    font-size: 30pt;
+    color: var(--color1);
+}
+
+.line {
+    background: var(--color2);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.line > p {
+    font-size: 20pt;
+    font-family: "Domine", serif;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+.content {
+    background: var(--color1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em;
+    gap: 1em;
+    color: var(--color4);
+}
+
+.content > h1 {
+    font-size: 40pt;
+    font-family: "Domine", serif;
+    font-weight: lighter;
+}
+
+.content > h3 {
+    font-size: 20pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin-bottom: 2em;
+}
+
+.content-paragraph {
+    display: flex;
+    flex-direction: column;
+    max-width: 850px;
+    gap: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    color: var(--color5);
+}
+
+#nd-hero {
+    max-width: 650px;
+    font-family: "Domine", serif;
+    font-size: 25pt;
+    margin-top: 2em;
+}
+
+.hero-btn {
+    padding: 0.5em;
+    font-size: 15pt;
+    width: 200px;
+    background: var(--color2);
+    color: var(--color1);
+    border: none;
+    border-radius: 1em;
+    box-shadow: 1px 5px 5px rgba(29, 19, 0, 0.301);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+
+.hero-btn:hover {
+    background: var(--color3);
+    transform: translateX(1em);
+    transition: all 0.7s;
+}
+
+.second-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: var(--color6);
+    padding: 2em;
+    height: 20vh;
+    
+}
+
+.line-one > h2 {
+    font-size: 40pt;
+    color: var(--color7);
+    font-family: "Domine", serif;
+}
+
+.line-one > p {
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: var(--color8);
+    margin-left: 0.5em;
+}
+
+.book-section {
+    background: var(--color1);
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.book-section > h1 {
+    font-size: 40pt;
+    font-family: "Domine", serif;
+    font-weight: lighter;
+    color: var(--color4);
+    margin-bottom: 1em;
+}
+
+.book-section > p {
+    max-width: 420px;
+    font-size: 15pt;
+    margin-bottom: 1em;
+    font-weight: lighter;
+}
+
+.book-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--color5);
+}
+
+.book-content > ul > li {
+    font-size: 15pt;
+    font-weight: lighter;
+    margin-bottom: 0.9em;
+}
+
+
+.book-image > img {
+    width: 600px;
+    
+}
+
+.book-btn {
+    width: 30%;
+    padding: 1em;
+    border: none;
+    border-radius: 1em;
+    background: var(--color2);
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 15pt;
+    box-shadow: 1px 5px 5px rgba(29, 19, 0, 0.301);
+    transition: all 1s;
+}
+
+.book-btn:hover {
+    background: var(--color3);
+    transform: translateX(1em);
+    transition: all 0.7s;
+}
+
+.line-third {
+    background: var(--color6);
+    padding: 4em;
+}
+
+.line-third > h3 {
+    font-family: "Domine", serif;
+    font-size: 20pt;
+    font-weight: lighter;
+    color: var(--color8);
+}
+
+.line-third > p {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color8);
+    margin-top: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+}
+
+.natasja-image {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: end;
+    background: url(imgs/natasja-image.jpg);
+    background-size: cover;
+    background-position: right center;
+    padding: 4em;
+    height: 60vh;
+}
+
+.natasja-image {
+    color: var(--color1);
+}
+
+.natasja-name {
+    display: flex;
+    flex-direction: column
+}
+
+.natasja-name > h1 {
+    font-size: 35pt;
+    font-family: "Domine", serif;
+    font-weight: lighter;
+}
+
+.natasja-name > p {
+    align-self: flex-end;
+    font-size: 17pt;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0.4em;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    background: var(--color1);
+    padding: 5em;
+    align-items: center;
+}
+
+.description > #p-h1 {
+    color: var(--color4);
+    max-width: 860px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20pt;
+}
+
+.description > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    margin-top: 2em;
+    max-width: 870px;
+    color: var(--color4);
+}
+
+.description > h3 {
+    margin-top: 2em;
+    font-size: 20pt;
+    font-family: "Domine", serif;
+    color: var(--color4);
+    max-width: 650px;
+}
+
+.description-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    font-weight: 500;
+    border: none;
+    border-radius: 1em;
+    background: var(--color2);
+    padding: 1em;
+    width: 150px;
+    margin-top: 2em;
+    color: var(--color1);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.description-btn:hover {
+    background: var(--color3);
+    transform: translateX(1em);
+    transition: all 0.7s;
+}
+
+.line-fourth {
+    font-family: "Domine",serif;
+    background: var(--color6);
+    padding: 5em;
+    color: var(--color1);
+    text-align: center;
+}
+
+.explore {
+    background: url(imgs/couple-5.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 1em ;
+}
+.explore > h1 {
+    font-family: "Domine", serif;
+    font-size: 30pt;
+    font-weight: lighter;
+    color: var(--color1);
+}
+
+.explore > p {
+    color: var(--color1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    font-weight: lighter;
+    margin-bottom: 1em;
+}
+
+#description-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+    font-weight: 500;
+    border: none;
+    border-radius: 1em;
+    background: var(--color2);
+    padding: 1em;
+    width: 250px;
+    margin-top: 2em;
+    color: var(--color1);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+#description-btn:hover {
+    background: var(--color3);
+    transform: translateX(1em);
+    transition: all 0.7s;
+}
+
+#linefourth > h2 {
+    color: var(--color8);
+}
+
+
+#linefourth > p {
+    color: var(--color8);
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+
+.discover {
+    display: flex;
+    flex-direction: row;
+    background: var(--color7);
+}
+
+.discover-back {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 2em;
+    background: var(--color1);
+    max-width: 1050px;
+    max-height: 645px;
+    border-radius: 1em;
+ 
+}
+
+.discover-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 570px;
+    padding: 2em;
+   
+}
+
+.discover-content > h1 {
+    font-family: "Domine", serif;
+    font-size: 35pt;
+    margin-bottom: 0.4em;
+    color: var(--color4);
+}
+
+.discover-content > p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1em;
+    color: var(--color4);
+}
+
+.discover-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 1em;
+    background: var(--color2);
+    color:  var(--color1);
+    padding: 1em;
+    width: 40%;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.discover-btn:hover {
+    background: var(--color3);
+    transition: all 0.9s;
+    transform: translateX(2em);
+}
+
+.woman-book {
+    background: url(imgs/book-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50vw;
+    height: 70vh;
+}

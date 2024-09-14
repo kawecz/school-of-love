@@ -1,0 +1,227 @@
+@media screen and (min-width:830px) and (max-width:990px) {
+    .burger {
+        display: block;
+    }
+    .nav-list {
+        display: none;
+    }
+
+    .book-image > img {
+        width: 450px;
+    }
+
+    .discover-back {
+        max-width: 870px;
+    }
+}
+
+@media screen and (min-width:765px) and (max-width:830px) {
+    .burger {
+        display: block;
+    }
+    .nav-list {
+        display: none;
+    }
+
+    .content > h1 {
+        font-size: 30pt;
+    }
+
+    .content  > h3 {
+        font-size: 15pt;
+        text-align: center;
+    }
+
+    #nd-hero {
+        font-size: 20pt;
+        text-align: center;
+    }
+
+    .book-image > img {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width:650px) and (max-width:765px) {
+    .hero > h1 {
+        font-size: 25pt;
+        text-align: center;
+    }
+
+    .burger {
+        display: block;
+    }
+    .nav-list {
+        display: none;
+    }
+
+    .content > h1 {
+        font-size: 30pt;
+    }
+
+    .content  > h3 {
+        font-size: 15pt;
+        text-align: center;
+    }
+
+    #nd-hero {
+        font-size: 20pt;
+        text-align: center;
+    }
+
+    .book-content {
+        flex-direction: column;
+    }
+
+    .book-image > img {
+        width: 350px;
+    }
+
+    .book-btn {
+        width: 200px;
+    }
+
+    .discover {
+        height: 90vh;
+    }
+
+    .discover-back {
+        flex-direction: column;
+        margin-bottom: 2em;
+        height: 70vh;
+    }
+
+    .discover-content {
+        height: 90vh;
+    }
+
+   
+
+    .woman-book {
+        width: 100%;
+        background-position: center;
+        display: none;
+    }
+}
+
+@media screen and (max-width:650px) {
+    
+    nav > h2 {
+        font-size: 15pt;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .hero > h1 {
+        font-size: 25pt;
+        text-align: center;
+    }
+
+    .line {
+        padding: 3em;
+    }
+
+    .line > p {
+        font-size: 15pt;
+        
+    }
+  
+
+    .content > h1 {
+        font-size: 27pt;
+    }
+
+    .content  > h3 {
+        font-size: 14pt;
+        text-align: center;
+    }
+
+    #nd-hero {
+        font-size: 20pt;
+        text-align: center;
+    }
+
+    .line-one  > h2 {
+        font-size: 25pt;
+    }
+
+    .line-one > p {
+        font-size: 11pt;
+    }
+
+    .book-content {
+        flex-direction: column;
+    }
+
+    .book-content > ul > li {
+        font-size: 13pt;
+    }
+
+    .book-image > img {
+        margin-top: 1em;
+        width: 350px;
+    }
+
+    .book-btn {
+        margin-top: 2em;
+        width: 200px;
+    }
+
+    .natasja-name > h1 {
+        font-size: 25pt;
+        font-family: "Domine", serif;
+        font-weight: lighter;
+    }
+    
+    .natasja-name > p {
+        align-self: flex-end;
+        font-size: 15pt;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0.4em;
+    }
+
+    .description > #p-h1 {
+        font-size: 17pt;
+    }
+
+    .description > p {
+
+        font-size: 13pt;
+    }
+
+    .explore > h1 {
+        font-size: 25pt
+    }
+
+    .explore > p {
+        font-size: 13pt;
+        text-align: center;
+    }
+
+
+
+    .discover {
+        height: 90vh;
+    }
+
+    .discover-back {
+        flex-direction: column;
+        border-radius: 0;
+    }
+
+    .discover-content {
+        height: 90vh;
+    }
+
+    .woman-book {
+        width: 100%;
+        background-position: center;
+        display: none;
+    }
+}
