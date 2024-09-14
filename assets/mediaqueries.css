@@ -205,19 +205,11 @@
     }
 
 
-
-    .discover {
-        height: 90vh;
-    }
-
     .discover-back {
         flex-direction: column;
         border-radius: 0;
     }
 
-    .discover-content {
-        height: 90vh;
-    }
 
     .woman-book {
         width: 100%;
