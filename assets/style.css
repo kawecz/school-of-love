@@ -509,3 +509,85 @@ nav > ul > li > a:hover {
     width: 50vw;
     height: 70vh;
 }
+
+.discover-content > img {
+    display: none;
+
+}
+
+.our-book {
+    display: flex;
+    flex-direction: column;
+    background:var(--color7);
+    align-items: center;
+    padding: 2em;
+    font-family: "Domine", serif;
+    color: var(--color4);
+}
+
+.our-book > h1 {
+    color: var(--color4);
+}
+
+.books {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.thebook {
+    cursor: pointer;
+}
+
+.picture {
+    background: url(imgs/couple-1.jpg);
+    background-size: cover;
+    width: 310px;
+    height: 250px;
+    margin-top: 4em;
+}
+
+.picture-2 {
+    background: url(imgs/couple-3.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 310px;
+    height: 250px;
+    margin-top: 4em;
+}
+
+.picture-3 {
+    background: url(imgs/oldcouple.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 310px;
+    height: 250px;
+    margin-top: 4em;
+}
+
+.description-picture {
+    font-family: "Domine", serif;
+    padding: 1em;
+    max-width: 310px;
+    background: var(--color1);
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+#d01 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: var(--color2);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#d02,#d03 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: var(--color2);
+    text-transform: uppercase;
+    text-align: center;
+    margin-top:1.2em;
+}

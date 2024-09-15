@@ -10,9 +10,17 @@
         width: 450px;
     }
 
-    .discover-back {
-        max-width: 870px;
+    .picture,.picture-2,.picture-3 {
+        width: 250px;
+        height: 250px;
+       
     }
+    
+    .description-picture {
+        max-width: 250px
+    }
+
+   
 }
 
 @media screen and (min-width:765px) and (max-width:830px) {
@@ -39,6 +47,16 @@
 
     .book-image > img {
         width: 350px;
+    }
+
+    .picture,.picture-2,.picture-3 {
+        width: 220px;
+        height: 250px;
+       
+    }
+    
+    .description-picture {
+        max-width: 220px
     }
 }
 
@@ -81,19 +99,21 @@
         width: 200px;
     }
 
-    .discover {
-        height: 90vh;
-    }
 
     .discover-back {
         flex-direction: column;
         margin-bottom: 2em;
-        height: 70vh;
+      
     }
 
-    .discover-content {
-        height: 90vh;
+    .discover-content > img {
+        display: block;
+        width: 450px;
+        margin: 2em auto;
+        border-top-right-radius: 2em;
+        border-bottom-left-radius: 2em;
     }
+   
 
    
 
@@ -102,6 +122,25 @@
         background-position: center;
         display: none;
     }
+
+    .books {
+        flex-direction: column;
+    }
+
+    .picture {
+        background-position: center;
+    }
+
+    .picture,.picture-2,.picture-3 {
+        width: 600px;
+        height: 220px;
+       
+    }
+    
+    .description-picture {
+        max-width: 600px;
+    }
+
 }
 
 @media screen and (max-width:650px) {
@@ -209,11 +248,33 @@
         flex-direction: column;
         border-radius: 0;
     }
+    .discover-content > img {
+        display: block;
+        width: 350px;
+        margin: auto;
+        margin-top: 2em;
+        border-top-right-radius: 2em;
+        border-bottom-left-radius: 2em;
+    }
 
 
     .woman-book {
         width: 100%;
         background-position: center;
         display: none;
+    }
+
+    .books {
+        flex-direction: column;
+    }
+
+    .picture,.picture-2,.picture-3{
+        width: 350px;
+        height: 220px;
+       
+    }
+    
+    .description-picture {
+        max-width: 350px;
     }
 }
