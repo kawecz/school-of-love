@@ -108,7 +108,7 @@
 
     .discover-content > img {
         display: block;
-        width: 450px;
+        width: 400px;
         margin: 2em auto;
         border-top-right-radius: 2em;
         border-bottom-left-radius: 2em;
@@ -248,7 +248,7 @@
     }
     .discover-content > img {
         display: block;
-        width: 300px;
+        width: 250px;
         margin: auto;
         margin-top: 2em;
         border-top-right-radius: 2em;
